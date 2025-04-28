@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://www.planprivadoderetiro.com.mx/sitemap.xml

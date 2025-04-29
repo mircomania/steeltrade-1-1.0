@@ -30,7 +30,7 @@
 /* --------------------------------- MENU HAMBURGESA*/
 
 .burger-menu-icon {
-    position: absolute;
+    position: fixed;
     top: 8px;
     right: 25px;
     font-size: 40px;
@@ -70,41 +70,6 @@
     font-size: 22px;
     cursor: pointer;
     user-select: none;
-}
-
-.container-bajo-mobile {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.logo-mobile-menu,
-.redes-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.redes-container {
-    gap: 9px;
-}
-
-.redes-container img {
-    width: 32px;
-    user-select: none;
-    pointer-events: none;
-}
-
-.redes-container a:hover {
-    scale: 0.9;
-}
-
-.logo-mobile-menu img {
-    height: 100px;
-    user-select: none;
-    pointer-events: none;
-    padding-bottom: 20px;
 }
 
 .link-container:hover {

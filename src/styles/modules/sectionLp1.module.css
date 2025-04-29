@@ -1,7 +1,118 @@
+@keyframes moveBackground {
+    0% {
+        background-position: 0% bottom;
+    }
+    50% {
+        background-position: 100% bottom;
+    }
+    100% {
+        background-position: 0% bottom;
+    }
+}
+
 .sectionContainer {
+    position: relative;
+    min-height: 100dvh;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.sectionTitulo {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(36, 53, 78, 0.8);
+    color: var(--text-color-2);
+    border-radius: 5px;
+    padding: 50px 10px;
+    width: 300px;
+}
+
+.sectionTitulo h1 {
+    font-size: 35px;
+    user-select: none;
     text-align: center;
-    height: 100dvh;
+    padding-bottom: 20px;
+}
+
+.sectionTitulo p {
+    user-select: none;
+    text-align: justify;
+}
+
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: 0% bottom;
+    background-repeat: no-repeat;
+    will-change: background-position;
+}
+
+.bg1 {
+    background-image: url('/src/assets/images/fondo-lp-section-1.1.webp');
+    animation: moveBackground 130s linear infinite;
+}
+
+@media (min-width: 576px) {
+    .sectionTitulo {
+        margin: 30px 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .sectionContainer {
+        justify-content: end;
+    }
+
+    .sectionTitulo {
+        margin: 0px 0;
+        margin-right: 50px;
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: 992px) {
+    .sectionTitulo {
+        margin-right: 100px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .sectionTitulo {
+        padding: 50px 24px;
+        width: 400px;
+    }
+
+    .sectionTitulo h1 {
+        font-size: 45px;
+    }
+
+    .sectionTitulo p {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .sectionTitulo {
+        margin-right: 150px;
+    }
+}
+
+@media (min-width: 1700px) {
+    .sectionTitulo {
+        padding: 50px 41px;
+        width: 550px;
+    }
+
+    .sectionTitulo h1 {
+        font-size: 60px;
+    }
+
+    .sectionTitulo p {
+        font-size: 26px;
+    }
 }

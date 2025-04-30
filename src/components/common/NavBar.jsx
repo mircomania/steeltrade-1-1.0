@@ -21,7 +21,7 @@ export const NavBar = () => {
             const targetElement = document.querySelector(item.to);
             if (targetElement) {
                 window.scrollTo({
-                    top: targetElement.offsetTop, // Ajuste para compensar el navbar
+                    top: targetElement.offsetTop - 50, // Ajuste para compensar el navbar
                     behavior: 'smooth',
                 });
             }

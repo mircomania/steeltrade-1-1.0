@@ -13,7 +13,7 @@ export const SectionLp1 = () => {
                 </p>
             </div>
 
-            {/* Fondos animados */}
+            {/* Fondo animado */}
             <div className={`${styles.bg} ${styles.bg1}`}></div>
         </section>
     );

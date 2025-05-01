@@ -12,7 +12,7 @@
 
 .sectionContainer {
     position: relative;
-    min-height: 100dvh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,6 +22,7 @@
     position: relative;
     z-index: 1;
     background-color: rgba(36, 53, 78, 0.8);
+    box-shadow: 0px 0px 5px var(--background-color);
     color: var(--text-color-2);
     border-radius: 5px;
     padding: 50px 10px;
@@ -60,7 +61,7 @@
 
 @media (min-width: 576px) {
     .sectionTitulo {
-        margin: 30px 0;
+        margin-bottom: 50px;
     }
 }
 
@@ -70,7 +71,7 @@
     }
 
     .sectionTitulo {
-        margin: 0px 0;
+        margin-bottom: 0px;
         margin-right: 50px;
         margin-top: 50px;
     }
@@ -84,12 +85,24 @@
 
 @media (min-width: 1200px) {
     .sectionTitulo {
-        padding: 50px 24px;
+        padding: 50px 40px;
         width: 400px;
     }
 
+    .sectionTitulo p {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .sectionTitulo {
+        padding: 70px 18px;
+        margin-right: 100px;
+        width: 500px;
+    }
+
     .sectionTitulo h1 {
-        font-size: 45px;
+        font-size: 59px;
     }
 
     .sectionTitulo p {
@@ -97,23 +110,18 @@
     }
 }
 
-@media (min-width: 1400px) {
-    .sectionTitulo {
-        margin-right: 150px;
-    }
-}
-
 @media (min-width: 1700px) {
     .sectionTitulo {
-        padding: 50px 41px;
-        width: 550px;
+        padding: 70px 59px;
+        margin-right: 300px;
+        width: 500px;
     }
 
     .sectionTitulo h1 {
-        font-size: 60px;
+        font-size: 49px;
     }
 
     .sectionTitulo p {
-        font-size: 26px;
+        font-size: 22px;
     }
 }

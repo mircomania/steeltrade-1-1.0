@@ -1,0 +1,142 @@
+.sectionContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(95deg, rgba(43, 63, 94, 0.8) 50%, rgba(56, 82, 116, 0.5));
+}
+
+.sectionTitulo {
+    user-select: none;
+    color: var(--text-color-2);
+    padding: 20px 0;
+}
+
+.sectionTitulo h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+
+.sectionTitulo p {
+    width: 320px;
+    text-align: justify;
+}
+
+.sectionContenido {
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.itemContainer {
+    color: var(--text-color-2);
+    width: 320px;
+    margin-top: 20px;
+}
+
+.itemContainer h3 {
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+.itemContainer img {
+    pointer-events: none;
+    box-shadow: 0px 0px 5px var(--background-color);
+    border-radius: 5px;
+    margin-bottom: 5px;
+    width: 320px;
+}
+
+.productList {
+    margin-left: 15px;
+}
+
+@media (min-width: 576px) {
+    .sectionTitulo p,
+    .itemContainer img,
+    .itemContainer {
+        width: 530px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .sectionTitulo p {
+        width: 674px;
+    }
+
+    .sectionContenido {
+        flex-direction: row;
+        gap: 50px;
+    }
+
+    .itemContainer {
+        width: 320px;
+        margin-top: 0px;
+    }
+
+    .itemContainer img {
+        width: 320px;
+    }
+
+    .productList {
+        height: 50px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .sectionContainer {
+        padding-top: 20px;
+    }
+
+    .sectionTitulo h2 {
+        font-size: 60px;
+    }
+
+    .sectionTitulo p {
+        width: 758px;
+        font-size: 18px;
+    }
+
+    .itemContainer {
+        width: 366px;
+    }
+
+    .itemContainer h3 {
+        font-size: 22px;
+    }
+
+    .itemContainer img {
+        width: 366px;
+    }
+
+    .productList {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1700px) {
+    .sectionTitulo p {
+        width: 842px;
+        font-size: 20px;
+    }
+
+    .itemContainer {
+        width: 400px;
+    }
+
+    .itemContainer h3 {
+        font-size: 26px;
+    }
+
+    .itemContainer img {
+        width: 400px;
+    }
+
+    .productList {
+        font-size: 20px;
+    }
+}

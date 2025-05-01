@@ -1,0 +1,24 @@
+.sectionContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(95deg, var(--background-color) 50%, var(--text-color-2));
+}
+
+.sectionTitulo {
+    user-select: none;
+    color: var(--text-color);
+    padding: 20px 0;
+}
+
+.sectionTitulo h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+
+.sectionTitulo p {
+    width: 320px;
+    text-align: justify;
+}

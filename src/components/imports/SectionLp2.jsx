@@ -3,6 +3,7 @@ import styles from '../../styles/modules/sectionLp2.module.css';
 import imgSectionLp2 from '../../assets/images/img-lp-section-2.webp';
 
 import { itemsSectionLp2 } from '../utils/itemsSectionLp2';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export const SectionLp2 = () => {
@@ -19,7 +20,7 @@ export const SectionLp2 = () => {
                 </p>
             </header>
 
-            <section className={styles.sectionContenido}>
+            <div className={styles.sectionContenido}>
                 <img src={imgSectionLp2} alt="Fabrica distribuidora de acero, muy moderna, vista desde afuera" />
 
                 <div className={styles.itemsContainer}>
@@ -35,7 +36,7 @@ export const SectionLp2 = () => {
                         </div>
                     ))}
                 </div>
-            </section>
+            </div>
         </section>
     );
 };

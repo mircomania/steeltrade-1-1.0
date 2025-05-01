@@ -33,8 +33,10 @@
 }
 
 .sectionContenido img {
-    width: 320px;
     pointer-events: none;
+    box-shadow: 0px 4px 10px var(--primary-color);
+    border-radius: 5px;
+    width: 320px;
 }
 
 .itemContainer {
@@ -115,10 +117,6 @@
     .sectionTitulo p {
         width: 1200px;
         font-size: 18px;
-    }
-
-    .sectionContenido {
-        gap: 50px;
     }
 
     .sectionContenido img {

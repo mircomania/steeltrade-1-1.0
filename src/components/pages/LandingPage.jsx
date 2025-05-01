@@ -23,7 +23,7 @@ const LandingPage = () => {
     }, [location]);
 
     return (
-        <main>
+        <main className="fondo1">
             <section>
                 <SectionLp1 />
             </section>

@@ -4,7 +4,7 @@ import img3 from '../../assets/images/img-lp-section-4-3.webp';
 import img4 from '../../assets/images/img-lp-section-4-4.webp';
 import img5 from '../../assets/images/img-lp-section-4-5.webp';
 
-export const itemsSectionLp3 = [
+export const itemsSectionLp4 = [
     {
         id: 1,
         title: 'Transporte marítimo y terrestre',
@@ -27,7 +27,7 @@ export const itemsSectionLp3 = [
     },
     {
         id: 5,
-        title: 'Supervisión presencial en el origen y el destino de la carga',
+        title: 'Supervisión presencial',
         image: img5,
     },
 ];

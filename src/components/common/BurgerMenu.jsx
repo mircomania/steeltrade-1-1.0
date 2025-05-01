@@ -61,7 +61,7 @@ export const BurgerMenu = () => {
                 <ul className="burger-menu-nav bold-text">
                     {navLinks.map((link, index) => (
                         <div className="link-container" key={link.id}>
-                            <li className={index === navLinks.length - 1 ? 'last-item' : ''}>
+                            <li>
                                 {(() => {
                                     if (link.id === 'inicio') {
                                         return (

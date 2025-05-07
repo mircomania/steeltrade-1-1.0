@@ -9,7 +9,7 @@
 .sectionTitulo {
     user-select: none;
     color: var(--text-color);
-    padding: 20px 0;
+    padding-top: 20px;
 }
 
 .sectionTitulo h2 {
@@ -19,11 +19,13 @@
 }
 
 .sectionTitulo p {
-    width: 320px;
+    margin-bottom: 20px;
+    width: 287px;
     text-align: justify;
 }
 
 .sectionContenido {
+    color: var(--text-color);
     user-select: none;
     display: flex;
     flex-direction: column;
@@ -32,76 +34,105 @@
     padding-bottom: 50px;
 }
 
-.sectionContenido img {
+.contenido1,
+.contenido2,
+.contenido3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 290px;
+}
+
+.contenido1 img {
     pointer-events: none;
     box-shadow: 0px 4px 10px var(--primary-color);
     border-radius: 5px;
-    width: 320px;
+    width: 290px;
 }
 
-.itemContainer {
-    color: var(--text-color);
-    width: 320px;
+.contenido1 h3,
+.contenido3 h3 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.contenido1 p,
+.contenido3 p {
+    text-align: justify;
+}
+
+.contenido2 h3 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: -10px;
+    font-size: 24px;
+}
+
+.contenido2 p {
+    text-align: justify;
     margin-top: 20px;
 }
 
-.itemHeader {
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    gap: 10px;
-}
-
-.itemIcon {
-    color: var(--primary-color);
-    font-size: 30px;
-}
-
-.itemHeader h3 {
-    font-size: 18px;
-}
-
-.itemContainer p {
-    text-align: justify;
-    width: 280px;
-    margin-top: 5px;
-    margin-left: 30px;
+.contenido2 hr {
+    display: none;
 }
 
 @media (min-width: 576px) {
     .sectionTitulo p,
-    .sectionContenido img,
-    .itemContainer,
-    .itemContainer p {
+    .contenido1,
+    .contenido1 img,
+    .contenido2,
+    .contenido3 {
         width: 530px;
-    }
-
-    .itemContainer p {
-        margin-left: 0px;
     }
 }
 
 @media (min-width: 1200px) {
-    .sectionTitulo p {
+    .sectionTitulo p,
+    .contenido1,
+    .contenido2,
+    .contenido3 {
         width: 1050px;
     }
 
-    .sectionContenido {
+    .contenido1 {
         flex-direction: row;
-        gap: 50px;
+        align-items: start;
+        justify-content: space-between;
     }
 
-    .sectionContenido img {
-        width: 600px;
+    .contenido1 img {
+        width: 450px;
     }
 
-    .itemsContainer {
-        margin-bottom: 20px;
+    .contenido1 p {
+        width: 530px;
     }
 
-    .itemContainer,
-    .itemContainer p {
-        width: 405px;
+    .contenido2 h3 {
+        margin-top: 30px;
+    }
+
+    .contenido2 hr {
+        display: block;
+        width: 100%;
+        border: none;
+        border-radius: 10px;
+        height: 2px;
+        background-color: var(--primary-color);
+        margin-top: 20px;
+    }
+
+    .contenido3 {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .contenido3 p {
+        width: 500px;
     }
 }
 
@@ -119,25 +150,39 @@
         font-size: 18px;
     }
 
-    .sectionContenido img {
-        width: 700px;
+    .contenido1,
+    .contenido2,
+    .contenido3 {
+        width: 1200px;
     }
 
-    .itemsContainer {
-        margin-bottom: 20px;
+    .contenido1 img {
+        width: 600px;
     }
 
-    .itemContainer {
-        width: 455px;
+    .contenido1 p {
+        margin-top: 20px;
     }
 
-    .itemContainer h3 {
-        font-size: 22px;
+    .contenido1 h3,
+    .contenido2 h3,
+    .contenido3 h3 {
+        font-size: 32px;
     }
 
-    .itemContainer p {
+    .contenido1 p,
+    .contenido2 p,
+    .contenido3 p {
         font-size: 18px;
-        width: 455px;
+    }
+
+    .contenido2 hr {
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    .contenido3 p {
+        width: 540px;
     }
 }
 
@@ -147,29 +192,31 @@
         font-size: 20px;
     }
 
-    .sectionContenido {
-        gap: 50px;
-        margin-right: 0px;
+    .contenido1,
+    .contenido2,
+    .contenido3 {
+        width: 1300px;
     }
 
-    .sectionContenido img {
-        width: 700px;
+    .contenido1 img {
+        width: 650px;
     }
 
-    .itemsContainer {
-        margin-bottom: 20px;
+    .contenido1 h3 {
+        margin-top: 60px;
     }
 
-    .itemContainer {
-        width: 550px;
+    .contenido1 p {
+        width: 562px;
     }
 
-    .itemContainer h3 {
-        font-size: 26px;
-    }
-
-    .itemContainer p {
+    .contenido1 p,
+    .contenido2 p,
+    .contenido3 p {
         font-size: 20px;
-        width: 550px;
+    }
+
+    .contenido3 p {
+        width: 570px;
     }
 }

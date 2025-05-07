@@ -70,11 +70,11 @@
 
     .sectionContenido {
         width: 1050px;
-        gap: 20px;
+        gap: 30px;
     }
 
     .card {
-        width: 336px;
+        width: 330px;
         height: 150px;
     }
 }
@@ -95,10 +95,11 @@
 
     .sectionContenido {
         width: 1240px;
+        gap: 40px;
     }
 
     .card {
-        width: 385px;
+        width: 370px;
         height: 200px;
     }
 
@@ -115,10 +116,11 @@
 
     .sectionContenido {
         width: 1300px;
+        gap: 50px;
     }
 
     .card {
-        width: 420px;
+        width: 400px;
         height: 250px;
     }
 

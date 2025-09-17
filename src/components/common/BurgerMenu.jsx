@@ -6,6 +6,8 @@ import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
+import LogoBurger from '../../assets/images/test-logo3.png';
+
 export const BurgerMenu = () => {
     const [isOpen, setIsOpen] = useState(false);
     const location = useLocation();
@@ -23,7 +25,7 @@ export const BurgerMenu = () => {
             const targetElement = document.querySelector(link.to);
             if (targetElement) {
                 window.scrollTo({
-                    top: targetElement.offsetTop - 55, // Ajuste para compensar el navbar
+                    top: targetElement.offsetTop - 78, // Ajuste para compensar el navbar
                     behavior: 'smooth',
                 });
             }
@@ -87,6 +89,14 @@ export const BurgerMenu = () => {
                         </div>
                     ))}
                 </ul>
+
+                <div className="container-bajo-mobile">
+                    {/* LOGO  */}
+
+                    <div className="logo-mobile-menu">
+                        <img src={LogoBurger} alt="Logotipo Steel Trade" loading="lazy" decoding="async" />
+                    </div>
+                </div>
             </div>
         </div>
     );

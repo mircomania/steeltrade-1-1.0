@@ -4,17 +4,18 @@
     align-items: center;
     justify-content: center;
     background: linear-gradient(95deg, rgba(43, 63, 94, 0.8) 50%, rgba(56, 82, 116, 0.5));
+    padding: 40px 0;
+    padding-bottom: 50px;
 }
 
 .sectionTitulo {
     user-select: none;
     color: var(--text-color-2);
-    padding: 20px 0;
 }
 
 .sectionTitulo h2 {
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-size: 32px;
 }
 
@@ -29,18 +30,17 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-bottom: 50px;
 }
 
 .itemContainer {
     color: var(--text-color-2);
     width: 320px;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .itemContainer h3 {
     font-size: 18px;
-    padding-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .itemContainer img {
@@ -64,6 +64,10 @@
 }
 
 @media (min-width: 1200px) {
+    .sectionContainer {
+        padding-bottom: 60px;
+    }
+
     .sectionTitulo p {
         width: 674px;
     }
@@ -71,6 +75,7 @@
     .sectionContenido {
         flex-direction: row;
         gap: 50px;
+        margin-top: 30px;
     }
 
     .itemContainer {
@@ -79,6 +84,7 @@
     }
 
     .itemContainer img {
+        margin-bottom: 10px;
         width: 320px;
     }
 
@@ -89,7 +95,8 @@
 
 @media (min-width: 1400px) {
     .sectionContainer {
-        padding-top: 20px;
+        padding-top: 60px;
+        padding-bottom: 80px;
     }
 
     .sectionTitulo h2 {

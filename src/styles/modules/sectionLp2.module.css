@@ -4,17 +4,17 @@
     align-items: center;
     justify-content: center;
     background: linear-gradient(95deg, var(--background-color) 50%, var(--text-color-2));
+    padding: 40px 0;
 }
 
 .sectionTitulo {
     user-select: none;
     color: var(--text-color);
-    padding-top: 20px;
 }
 
 .sectionTitulo h2 {
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-size: 32px;
 }
 
@@ -31,7 +31,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-bottom: 50px;
 }
 
 .contenido1,
@@ -55,7 +54,7 @@
 .contenido3 h3 {
     text-align: center;
     margin-top: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-size: 24px;
 }
 
@@ -67,7 +66,6 @@
 .contenido2 h3 {
     text-align: center;
     margin-top: 20px;
-    margin-bottom: -10px;
     font-size: 24px;
 }
 
@@ -123,12 +121,16 @@
         border-radius: 10px;
         height: 2px;
         background-color: var(--primary-color);
-        margin-top: 20px;
+        margin-top: 30px;
     }
 
     .contenido3 {
         flex-direction: row;
         justify-content: space-between;
+    }
+
+    .contenido3 h3 {
+        margin-top: 30px;
     }
 
     .contenido3 p {
@@ -138,7 +140,7 @@
 
 @media (min-width: 1400px) {
     .sectionContainer {
-        padding-top: 20px;
+        padding: 60px 0;
     }
 
     .sectionTitulo h2 {
@@ -161,7 +163,7 @@
     }
 
     .contenido1 p {
-        margin-top: 20px;
+        margin-top: 30px;
     }
 
     .contenido1 h3,
@@ -178,7 +180,7 @@
 
     .contenido2 hr {
         margin-top: 30px;
-        margin-bottom: 10px;
+        margin-bottom: 0px;
     }
 
     .contenido3 p {

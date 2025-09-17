@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 
-import LogoNavbar from '../../assets/images/logo-provisorio.webp';
+import LogoNavbar from '../../assets/images/test-logo3.png';
 
 export const Footer = () => {
     return (

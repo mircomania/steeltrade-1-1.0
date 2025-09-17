@@ -1,4 +1,4 @@
-import LogoNavbar from '../../assets/images/logo-provisorio.webp';
+import LogoNavbar from '../../assets/images/test-logo2.png';
 
 import { navLinks } from '../utils/navBarMenu';
 
@@ -21,7 +21,7 @@ export const NavBar = () => {
             const targetElement = document.querySelector(item.to);
             if (targetElement) {
                 window.scrollTo({
-                    top: targetElement.offsetTop - 50, // Ajuste para compensar el navbar
+                    top: targetElement.offsetTop - 78, // Ajuste para compensar el navbar
                     behavior: 'smooth',
                 });
             }

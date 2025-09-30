@@ -25,9 +25,9 @@
     box-shadow: 0px 0px 5px var(--background-color);
     color: var(--text-color-2);
     border-radius: 5px;
-    padding: 50px 10px;
+    padding: 50px 20px;
     margin-top: 50px;
-    width: 300px;
+    width: 320px;
 }
 
 .sectionTitulo h1 {
@@ -39,7 +39,6 @@
 
 .sectionTitulo p {
     user-select: none;
-    text-align: justify;
 }
 
 .bg {
@@ -86,7 +85,7 @@
 @media (min-width: 1200px) {
     .sectionTitulo {
         padding: 50px 40px;
-        width: 393px;
+        width: 450px;
     }
 
     .sectionTitulo p {
@@ -96,13 +95,13 @@
 
 @media (min-width: 1400px) {
     .sectionTitulo {
-        padding: 70px 18px;
+        padding: 70px 20px;
         margin-right: 100px;
-        width: 480px;
+        width: 450px;
     }
 
     .sectionTitulo h1 {
-        font-size: 57px;
+        font-size: 52px;
     }
 
     .sectionTitulo p {
@@ -112,13 +111,13 @@
 
 @media (min-width: 1700px) {
     .sectionTitulo {
-        padding: 70px 59px;
+        padding: 70px 60px;
         margin-right: 300px;
-        width: 520px;
+        width: 570px;
     }
 
     .sectionTitulo h1 {
-        font-size: 51px;
+        font-size: 52px;
     }
 
     .sectionTitulo p {

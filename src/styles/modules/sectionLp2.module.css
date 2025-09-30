@@ -19,9 +19,9 @@
 }
 
 .sectionTitulo p {
+    text-align: center;
     margin-bottom: 20px;
-    width: 287px;
-    text-align: justify;
+    width: 320px;
 }
 
 .sectionContenido {
@@ -40,14 +40,20 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 290px;
+    width: 320px;
+}
+
+.contenido1 p,
+.contenido2 p,
+.contenido3 p {
+    text-align: center;
 }
 
 .contenido1 img {
     pointer-events: none;
     box-shadow: 0px 4px 10px var(--primary-color);
     border-radius: 5px;
-    width: 290px;
+    width: 320px;
 }
 
 .contenido1 h3,
@@ -57,12 +63,6 @@
     margin-bottom: 20px;
     font-size: 24px;
 }
-
-.contenido1 p,
-.contenido3 p {
-    text-align: justify;
-}
-
 .contenido2 h3 {
     text-align: center;
     margin-top: 20px;
@@ -70,7 +70,6 @@
 }
 
 .contenido2 p {
-    text-align: justify;
     margin-top: 20px;
 }
 
@@ -86,9 +85,20 @@
     .contenido3 {
         width: 530px;
     }
+
+    .sectionTitulo p,
+    .contenido1 p,
+    .contenido2 p,
+    .contenido3 p {
+        text-align: start;
+    }
 }
 
 @media (min-width: 1200px) {
+    .sectionContainer {
+        padding: 50px 0;
+    }
+
     .sectionTitulo p,
     .contenido1,
     .contenido2,
@@ -100,6 +110,7 @@
         flex-direction: row;
         align-items: start;
         justify-content: space-between;
+        margin-top: 20px;
     }
 
     .contenido1 img {
@@ -111,7 +122,7 @@
     }
 
     .contenido2 h3 {
-        margin-top: 30px;
+        margin-top: 40px;
     }
 
     .contenido2 hr {
@@ -121,7 +132,7 @@
         border-radius: 10px;
         height: 2px;
         background-color: var(--primary-color);
-        margin-top: 30px;
+        margin-top: 40px;
     }
 
     .contenido3 {
@@ -130,7 +141,7 @@
     }
 
     .contenido3 h3 {
-        margin-top: 30px;
+        margin-top: 40px;
     }
 
     .contenido3 p {
@@ -144,7 +155,7 @@
     }
 
     .sectionTitulo h2 {
-        font-size: 60px;
+        font-size: 52px;
     }
 
     .sectionTitulo p {
@@ -179,7 +190,7 @@
     }
 
     .contenido2 hr {
-        margin-top: 30px;
+        margin-top: 40px;
         margin-bottom: 0px;
     }
 
@@ -219,6 +230,6 @@
     }
 
     .contenido3 p {
-        width: 570px;
+        width: 600px;
     }
 }

@@ -5,10 +5,9 @@ export const SectionLp1 = () => {
         <section className={styles.sectionContainer}>
             <div className={styles.sectionTitulo}>
                 <h1 className="bold-text">LIDER GLOBAL</h1>
-
                 <p className="light-text">
-                    Más de 30 años de práctica en el manejo de soluciones logísticas y suministro de acero en el mercado global nos permite afirmar
-                    que el éxito en las operaciones y servicios que brindamos está garantizado
+                    “Más de 30 años de experiencia en el manejo de soluciones logísticas y suministro de productos de acero en el mercado global nos
+                    permite afirmar que el éxito en las operaciones y servicios que brindamos está garantizado”.
                 </p>
             </div>
 

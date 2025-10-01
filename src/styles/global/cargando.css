@@ -17,24 +17,6 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 100vh;
+    height: 100dvh;
     background-image: linear-gradient(to bottom, var(--background-color), var(--background-color-2), var(--background-color-3));
-}
-
-@media (min-width: 768px) {
-    .cargando {
-        margin-top: -85px;
-    }
-}
-
-@media (min-width: 992px) {
-    .cargando {
-        margin-top: -105px;
-    }
-}
-
-@media (min-width: 1700px) {
-    .cargando {
-        margin-top: -155px;
-    }
 }

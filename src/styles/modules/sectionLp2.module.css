@@ -87,9 +87,7 @@
     }
 
     .sectionTitulo p,
-    .contenido1 p,
-    .contenido2 p,
-    .contenido3 p {
+    .contenido2 p {
         text-align: start;
     }
 }
@@ -118,7 +116,7 @@
     }
 
     .contenido1 p {
-        width: 530px;
+        width: 550px;
     }
 
     .contenido2 h3 {
@@ -220,7 +218,7 @@
     }
 
     .contenido1 p {
-        width: 562px;
+        width: 610px;
     }
 
     .contenido1 p,

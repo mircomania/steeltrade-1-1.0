@@ -1,27 +1,28 @@
 import LogoNavbar from '../../assets/images/test-logo2.png';
 
+import { useLanguage } from '../../contexts/LanguageContext';
 import { navLinks } from '../utils/navBarMenu';
 
 import { BurgerMenu } from './BurgerMenu';
 
-import { useState } from 'react';
 import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 
 export const NavBar = () => {
     const location = useLocation();
     const navigate = useNavigate();
-    const [activeLink, setActiveLink] = useState(navLinks[0].id); // Inicio como predeterminado
+
+    const { language, toggleLanguage } = useLanguage();
+    const links = navLinks[language]; // elige idioma dinámicamente
 
     const handleLinkClick = (e, item) => {
         e.preventDefault();
-        setActiveLink(item.id); // Establecer el enlace actual como activo
 
         if (location.pathname === '/') {
             // Si ya estás en la landing page
             const targetElement = document.querySelector(item.to);
             if (targetElement) {
                 window.scrollTo({
-                    top: targetElement.offsetTop - 78, // Ajuste para compensar el navbar
+                    top: targetElement.offsetTop - 78,
                     behavior: 'smooth',
                 });
             }
@@ -43,30 +44,25 @@ export const NavBar = () => {
 
                 {/* Menú de Navegación */}
                 <ul className="menu-nav light-text">
-                    {navLinks.map((item) => (
+                    {links.map((item) => (
                         <li key={item.id}>
                             {item.to.startsWith('#') ? (
-                                <a
-                                    href={item.to}
-                                    onClick={(e) => handleLinkClick(e, item)}
-                                    title={item.title}
-                                    className={activeLink === item.id ? 'active' : ''}
-                                >
+                                <a href={item.to} onClick={(e) => handleLinkClick(e, item)} title={item.title}>
                                     {item.label}
                                 </a>
                             ) : (
-                                <NavLink
-                                    to={item.to}
-                                    title={item.title}
-                                    className={({ isActive }) => (isActive || activeLink === item.id ? 'active' : '')}
-                                    onClick={() => setActiveLink(item.id)}
-                                >
+                                <NavLink to={item.to} title={item.title} className={({ isActive }) => (isActive ? 'active' : '')}>
                                     {item.label}
                                 </NavLink>
                             )}
                         </li>
                     ))}
                 </ul>
+
+                {/* Botón cambio idioma */}
+                <button onClick={toggleLanguage} className="btn-lang">
+                    {language === 'es' ? 'EN' : 'ES'}
+                </button>
             </nav>
 
             {/* Menú Hamburguesa */}

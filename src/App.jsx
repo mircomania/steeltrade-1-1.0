@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from 'react';
+import { lazy, Suspense, useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import { NavBar } from './components/common/NavBar';
@@ -8,34 +8,40 @@ import { ScrollToTop } from './hooks/ScrollTop';
 
 const LandingPage = lazy(() => import('./components/pages/LandingPage'));
 
-const routes = [{ path: '/', id: 1, element: <LandingPage /> }];
-
 function App() {
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setLoading(false);
+        }, 3700);
+
+        return () => clearTimeout(timer);
+    }, []);
+
     return (
         <BrowserRouter basename="/steeltrade-1-1.0">
             <ScrollToTop />
 
             <NavBar />
 
-            <Routes>
-                {routes.map(({ path, element, id }) => (
-                    <Route
-                        key={id}
-                        path={path}
-                        element={
-                            <Suspense
-                                fallback={
-                                    <div className="cargando">
-                                        <Cargando />
-                                    </div>
-                                }
-                            >
-                                {element}
-                            </Suspense>
-                        }
-                    />
-                ))}
-            </Routes>
+            {loading ? (
+                <main className="cargando">
+                    <Cargando />
+                </main>
+            ) : (
+                <Suspense
+                    fallback={
+                        <main className="cargando">
+                            <Cargando />
+                        </main>
+                    }
+                >
+                    <Routes>
+                        <Route path="/" element={<LandingPage />}></Route>
+                    </Routes>
+                </Suspense>
+            )}
 
             <Footer />
         </BrowserRouter>

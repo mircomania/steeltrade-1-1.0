@@ -27,6 +27,19 @@
     display: none;
 }
 
+.btn-lang {
+    background-color: transparent;
+    border: 2px solid back;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-right: 90px;
+}
+
 /* --------------------------------- MENU HAMBURGESA*/
 
 .burger-menu-icon {
@@ -130,13 +143,25 @@
 }
 
 @media (min-width: 768px) {
+    .navbar {
+        padding: 0px 40px;
+    }
+
+    .logo-navbar {
+        padding-left: 0px;
+    }
+
     .menu-nav {
         display: flex;
         list-style: none;
         align-items: center;
         gap: 20px;
-        padding-right: 30px;
+        padding-right: 0px;
         font-size: 16px;
+    }
+
+    .btn-lang {
+        margin-right: 0px;
     }
 
     .burger-menu {
@@ -151,35 +176,32 @@
 }
 
 @media (min-width: 1200px) {
-    .logo-navbar {
-        padding-left: 65px;
+    .navbar {
+        padding: 0px 60px;
     }
 
     .menu-nav {
         gap: 30px;
-        padding-right: 65px;
         font-size: 22px;
     }
 }
 
 @media (min-width: 1400px) {
-    .logo-navbar {
-        padding-left: 75px;
+    .navbar {
+        padding: 0px 80px;
     }
 
     .menu-nav {
-        padding-right: 80px;
         font-size: 24px;
     }
 }
 
 @media (min-width: 1700px) {
-    .logo-navbar {
-        padding-left: 130px;
+    .navbar {
+        padding: 0px 100px;
     }
 
     .menu-nav {
-        padding-right: 150px;
         font-size: 28px;
     }
 }

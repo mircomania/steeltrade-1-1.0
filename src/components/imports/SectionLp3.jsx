@@ -1,20 +1,25 @@
+import { useLanguage } from '../../contexts/LanguageContext';
+import { texts } from '../utils/texts';
+
 import styles from '../../styles/modules/sectionLp3.module.css';
 
 import { itemsSectionLp3 } from '../utils/itemsSectionLp3';
 
 export const SectionLp3 = () => {
+    const { language } = useLanguage();
+    const { title, description } = texts[language].section3;
+    const items = itemsSectionLp3[language];
+
     return (
         <section className={styles.sectionContainer}>
             <header className={styles.sectionTitulo}>
-                <h2 className="bold-text">PRODUCTOS</h2>
+                <h2 className="bold-text">{title}</h2>
 
-                <p className="light-text">
-                    Nuestra especialidad es siempre la más alta calidad en productos de acero al carbón planos, largos y tubulares.
-                </p>
+                <p className="light-text">{description}</p>
             </header>
 
             <div className={styles.sectionContenido}>
-                {itemsSectionLp3.map((item) => (
+                {items.map((item) => (
                     <div key={item.id} className={styles.itemContainer}>
                         <h3 className="bold-text">{item.title}</h3>
                         <img src={item.image} alt={item.title} />

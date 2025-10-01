@@ -1,3 +1,4 @@
+import { useLanguage } from '../../contexts/LanguageContext';
 import { navLinks } from '../utils/navBarMenu';
 
 import { useState } from 'react';
@@ -12,6 +13,9 @@ export const BurgerMenu = () => {
     const [isOpen, setIsOpen] = useState(false);
     const location = useLocation();
     const navigate = useNavigate();
+
+    const { language } = useLanguage();
+    const links = navLinks[language];
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
@@ -61,7 +65,7 @@ export const BurgerMenu = () => {
             <div className={`mobile-nav-menu ${isOpen ? 'open' : ''}`}>
                 {/* Opciones del menú */}
                 <ul className="burger-menu-nav bold-text">
-                    {navLinks.map((link, index) => (
+                    {links.map((link) => (
                         <div className="link-container" key={link.id}>
                             <li>
                                 {(() => {

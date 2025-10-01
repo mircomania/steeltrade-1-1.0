@@ -1,5 +1,10 @@
-import imgCargando from '../../assets/images/spiner-1.webp';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 
 export const Cargando = () => {
-    return <img src={imgCargando} alt="Cargando..." className="img-cargando" />;
+    return (
+        <div className="cargando-container">
+            <FontAwesomeIcon icon={faSpinner} spin size="2x" className="spinner-icon" />
+        </div>
+    );
 };

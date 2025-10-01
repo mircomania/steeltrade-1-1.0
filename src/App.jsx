@@ -7,6 +7,7 @@ import { Footer } from './components/common/Footer';
 import { ScrollToTop } from './hooks/ScrollTop';
 
 const LandingPage = lazy(() => import('./components/pages/LandingPage'));
+const ErrorPage = lazy(() => import('./components/pages/ErrorPage'));
 
 function App() {
     const [loading, setLoading] = useState(true);
@@ -14,7 +15,7 @@ function App() {
     useEffect(() => {
         const timer = setTimeout(() => {
             setLoading(false);
-        }, 3700);
+        }, 1000);
 
         return () => clearTimeout(timer);
     }, []);
@@ -34,11 +35,14 @@ function App() {
                     fallback={
                         <main className="cargando">
                             <Cargando />
+
+                            <ScrollToTop />
                         </main>
                     }
                 >
                     <Routes>
                         <Route path="/" element={<LandingPage />}></Route>
+                        <Route path="*" element={<ErrorPage />}></Route>
                     </Routes>
                 </Suspense>
             )}

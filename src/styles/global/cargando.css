@@ -1,14 +1,13 @@
-@keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+.cargando-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
-.spinner {
-    animation: spin 1.5s linear infinite;
+.cargando-container img {
+    width: 250px;
 }
 
 .cargando {
@@ -17,6 +16,11 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 100dvh;
+    height: 100vh;
     background-image: linear-gradient(to bottom, var(--background-color), var(--background-color-2), var(--background-color-3));
+}
+
+.spinner-icon {
+    color: var(--background-color);
+    margin-top: 10px;
 }
